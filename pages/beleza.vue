@@ -8,7 +8,7 @@
         </NuxtLink>
         <br>
         <br>
-        <button v-on:click="asyncData">Buscar emojes</button>
+        <button v-on:click="asyncData">Buscar emojis</button>
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <figure>
