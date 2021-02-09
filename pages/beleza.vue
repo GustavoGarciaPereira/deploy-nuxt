@@ -12,7 +12,7 @@
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <figure>
-                    <img v-bind:src=i[1] alt="">
+                    <img v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
                     <figcaption> {{ i[0] }} </figcaption>
                 </figure>
     
