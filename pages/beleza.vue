@@ -7,15 +7,15 @@
         home
         </NuxtLink>
         <br>
+        <input type="text" value="" placeholder="filtrar emojis">
         <br>
         <button v-on:click="asyncData">Buscar emojis</button>
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
-                <figure>
+                <figure class="">
                     <img v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
                     <figcaption> {{ i[0] }} </figcaption>
                 </figure>
-    
             </li>
         </div>        
     </div>
@@ -59,7 +59,14 @@ export default {
 <style>
     .lista-class{
         display: flex;
-        	flex-wrap: wrap;
-            list-style:none; 
+        flex-wrap: wrap;
+        list-style:none; 
+        flex-direction: row;
+        /*flex: 200px;*/
+        align-items: center;
+        justify-content: space-around;
+
+            
     }
+
 </style>
