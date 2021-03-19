@@ -6,7 +6,7 @@
         </NuxtLink>
         <br>
         <NuxtLink to='/js-legal'>
-            um pouco de java script
+            um pouco de javascript
         </NuxtLink>
 
     </div>
