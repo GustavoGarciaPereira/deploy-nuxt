@@ -1,5 +1,9 @@
 <template>
     <div>
+        <NuxtLink to='/'>
+            home
+        </NuxtLink>
+
         <h1>Primeiro é presiso caminhar para para depois correr!</h1>
         <div>
             <p>eu corri, cai e me machuquei hoje estou aprendendo a ander!</p>
