@@ -33,6 +33,8 @@
     }
     a{
         margin: 10px;
-        ;
+        font-style:italic;
+        text-decoration: none;
+        
     }
 </style>
