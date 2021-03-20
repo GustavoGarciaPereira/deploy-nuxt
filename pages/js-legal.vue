@@ -11,7 +11,7 @@
         <h1>Primeiro é preciso caminhar para depois correr!</h1>
         <div>
             <p>eu corri, cai e me machuquei hoje estou aprendendo a andar!</p>
-            <p>mas com a esperancia de ter caído!</p>
+            <p>mas com a experiência de ter caído!</p>
 
         </div>
 
