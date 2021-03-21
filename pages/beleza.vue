@@ -16,8 +16,10 @@
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <figure class="">
-                    <img v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
-                    <span @blur="visivel" class='label-menu'> {{ i[0] }} </span>
+                    <img @mouseover="contro_visivel(i[0],$event)" v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
+                    <!--
+                        <span :id="i" style="visibility: hidden"> {{ i[0] }}</span>
+                    -->
                     
                 </figure>
             </li>
@@ -30,12 +32,14 @@ export default {
 
     data() {
         return {
-            lista:[]
+            lista:[],
+            visivel:false 
         }
     },
     methods: {
-        visivel(){
-            console.log("gustavo")
+        contro_visivel(event,oi){
+
+            this.visivel = !this.visivel
         },
 
         async asyncData() {
