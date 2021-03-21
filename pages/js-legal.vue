@@ -1,9 +1,9 @@
 <template>
 <div>
 <div class="box">
-            <NuxtLink id="menu" to='/'>
-            home
-        </NuxtLink>
+    <NuxtLink id="menu" to='/'>
+        home
+    </NuxtLink>
 </div>
     <div id="main">
 
@@ -110,6 +110,4 @@
     margin-right: -50%;
     transform: translate(-50%, -50%) 
     }
-
-
 </style>

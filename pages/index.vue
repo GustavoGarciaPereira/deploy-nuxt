@@ -1,7 +1,10 @@
 <template>
+    
     <div id="box1">
+        <title>home</title>
         <div id="menu1">
-            <h1>gustavo</h1>
+
+            <h1>gustavo olá 👋</h1>
             <NuxtLink to='/beleza'>
                 beleza
             </NuxtLink>
@@ -16,13 +19,11 @@
 </template>
 
 <style>
-        #box1{
-            height: 10em;
+    #box1{
+        height: 10em;
     position: relative 
     }
     #menu1{
-        
-        
     margin: 0;
 
     position: absolute;
