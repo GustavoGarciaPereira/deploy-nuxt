@@ -16,10 +16,10 @@
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <figure class="">
-                    <img @mouseover="contro_visivel(i[0],$event)" v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
-                    <!--
-                        <span :id="i" style="visibility: hidden"> {{ i[0] }}</span>
-                    -->
+                    <img @mouseover="contro_visivel(i[0],$event)"  v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
+                    
+                    <span :id=i[0] style="display: none;"> {{ i[0] }}</span>
+                    
                     
                 </figure>
             </li>
@@ -51,7 +51,7 @@ export default {
             lista1.map(function(item){
                 nova_lista.push([item,l[item]])
             })
-
+            console.log(nova_lista)
             this.lista = nova_lista
         }
     
