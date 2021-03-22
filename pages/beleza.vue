@@ -18,7 +18,7 @@
                 <figure class="">
                     <img @mouseover="contro_visivel(i[0],$event)"  v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
                     
-                    <span :id=i[0] style="display: none;"> {{ i[0] }}</span>
+                    <span :id='i[0].replaceAll("_","__")' style="display: none;"> {{ i[0] }}</span>
                     
                     
                 </figure>
@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         contro_visivel(event,oi){
-
+            //console.log(this.$el.querySelector('#3rd__place__medal'))
             this.visivel = !this.visivel
         },
 
