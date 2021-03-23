@@ -1,11 +1,12 @@
 <template>
     <div>
+        
         <title>
             
         </title>
         <h1>belezinha</h1>
 
-
+        <card/>
         <NuxtLink to='/'>
         home
         </NuxtLink>
@@ -16,10 +17,12 @@
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <figure class="">
+                    <!--
                     <img @mouseover="contro_visivel(i[0],$event)"  v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
                     
                     <span :id='i[0].replaceAll("_","__")' style="display: none;"> {{ i[0] }}</span>
-                    
+                    -->
+                    <card/>
                     
                 </figure>
             </li>
@@ -28,9 +31,13 @@
 </template>
 <script>
 
+import card from './componets/card'
+
 export default {
 
+    components:{card},
     data() {
+     
         return {
             lista:[],
             visivel:false 

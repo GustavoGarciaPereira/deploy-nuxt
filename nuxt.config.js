@@ -1,4 +1,5 @@
 export default {
-    modules: ['@nuxtjs/axios']
+    modules: ['@nuxtjs/axios'],
+    comments:true
   }
   
