@@ -16,15 +16,18 @@
         <button v-on:click="asyncData">Buscar emojis</button>
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
+                <card/>
+                <!--
                 <figure class="">
-                    <!--
+                    
                     <img @mouseover="contro_visivel(i[0],$event)"  v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
                     
                     <span :id='i[0].replaceAll("_","__")' style="display: none;"> {{ i[0] }}</span>
-                    -->
-                    <card/>
+                    
+                    
                     
                 </figure>
+                -->
             </li>
         </div>        
     </div>
