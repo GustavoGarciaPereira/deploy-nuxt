@@ -12,6 +12,9 @@
             <NuxtLink to='/js-legal'>
                 um pouco de javascript
             </NuxtLink>
+            <NuxtLink to='/bioinformatica'>
+                Bioinformarica
+            </NuxtLink>
         </div>
     </div>
 
