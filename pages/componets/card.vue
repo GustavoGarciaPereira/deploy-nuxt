@@ -8,14 +8,14 @@
 
 <script>
     export default {
-        props:['src','alternativo'],
-        data(){
-            
-            console.log(this.alternativo)
-            this.alternativo = "gustavo"
-            return{
-                
+        props:{
+            src:{
+                type:String,
+            },
+            alternativo:{
+                type:String,
+                default:"imagem freecodecamp"
             }
-        }
+        },
     }
 </script>
