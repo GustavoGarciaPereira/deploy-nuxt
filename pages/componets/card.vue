@@ -1,11 +1,21 @@
 <template>
     <div>
         <figure>
-            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" width="90px" height="90px" alt="">
+            <img :src="src" width="90px" height="90px" :alt="alternativo">
         </figure>
     </div>
 </template>
 
 <script>
-
+    export default {
+        props:['src','alternativo'],
+        data(){
+            
+            console.log(this.alternativo)
+            this.alternativo = "gustavo"
+            return{
+                
+            }
+        }
+    }
 </script>

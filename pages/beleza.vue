@@ -6,7 +6,8 @@
         </title>
         <h1>belezinha</h1>
 
-        <card/>
+        <card src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png"
+        />
         <NuxtLink to='/'>
         home
         </NuxtLink>
@@ -16,7 +17,7 @@
         <button v-on:click="asyncData">Buscar emojis</button>
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
-                <card/>
+                <card :src="i[1]"/>
                 <!--
                 <figure class="">
                     
@@ -64,7 +65,6 @@ export default {
             console.log(nova_lista)
             this.lista = nova_lista
         }
-    
     },
 }
 </script>
