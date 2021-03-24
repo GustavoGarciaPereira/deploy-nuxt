@@ -20,6 +20,11 @@
 </template>
 <script>
 export default {
+    data() {
+        //http://127.0.0.1:5000/api/bio/contagem?base=attga
+        //const l = await this.$axios.$get('https://google.com/')
+        return{}
+    },
     
 }
 </script>
