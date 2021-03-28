@@ -6,7 +6,8 @@
         </title>
         <h1>belezinha</h1>
 
-        <card src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png"/>
+        <card src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png"
+        title="é so um exemplo"/>
         <NuxtLink to='/'>
             home
         </NuxtLink>
@@ -17,7 +18,8 @@
         <div class="lista-class">
             <li v-for=" i in this.lista" :key="i[0]">
                 <card :src="i[1]"
-                :alternativo="i[0]"/>
+                :alternativo="i[0]"
+                :title="i[0]"/>
                 <!--
                 <figure class="">
                     <img @mouseover="contro_visivel(i[0],$event)"  v-bind:src=i[1] v-bind:alt=i[0] width="64px" height="64px">
