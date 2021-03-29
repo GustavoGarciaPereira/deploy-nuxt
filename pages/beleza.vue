@@ -1,13 +1,13 @@
 <template>
     <div>
-        
-        <title>
-            
-        </title>
+
         <h1>belezinha</h1>
 
         <div id="menu-beleza">
-            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" alt="">
+            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" 
+            width="50px"
+            height="50px"
+            alt="">                
             <NuxtLink to='/'>
                 <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
             </NuxtLink>
