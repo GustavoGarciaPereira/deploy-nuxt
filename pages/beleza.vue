@@ -6,17 +6,18 @@
         </title>
         <h1>belezinha</h1>
 
-        <card src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png"
-        title="é so um exemplo"/>
-        <NuxtLink to='/'>
-            home
-        </NuxtLink>
-        <br>
-        <input type="text" value="" placeholder="filtrar emojis">
-        <br>
-        <button v-on:click="asyncData">Buscar emojis</button>
+        <div id="menu-beleza">
+            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" alt="">
+            <NuxtLink to='/'>
+                <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
+            </NuxtLink>
+            <input type="text" value="" placeholder="filtrar emojis">
+            <button v-on:click="asyncData">Buscar emojis</button>
+        </div>
+
+
         <div class="lista-class">
-            <li v-for=" i in this.lista" :key="i[0]">
+            <div class="lista" v-for=" i in this.lista" :key="i[0]">
                 <card :src="i[1]"
                 :alternativo="i[0]"
                 :title="i[0]"/>
@@ -26,7 +27,7 @@
                     <span :id='i[0].replaceAll("_","__")' style="display: none;"> {{ i[0] }}</span>
                 </figure>
                 -->
-            </li>
+            </div>
         </div>        
     </div>
 </template>
@@ -65,17 +66,26 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
+
     .lista-class{
         display: flex;
         flex-wrap: wrap;
-        list-style:none; 
-        flex-direction: row;
-        /*flex: 200px;*/
-        align-items: center;
-        justify-content: space-around;
 
-            
+    }
+    #menu-beleza{
+    display: flex;
+
+
+    }
+    #menu-beleza{
+        background: #eee;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+        border: 2px solid rgb(199, 189, 189);
+        flex-direction: column;
+
     }
 
 </style>

@@ -1,10 +1,10 @@
 <template>
-    <div>
+
         <figure>
             <img :src="src" width="90px" height="90px" :alt="alternativo">
             <div>{{ title }}</div>
         </figure>
-    </div>
+ 
 </template>
 
 <script>
@@ -28,6 +28,17 @@
 <style scoped>
     figure{
         display: flex;
-flex-direction: column;
+
+
+    }
+    figure{
+        background: #eee;
+        padding: 2rem;
+        width: 100px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid rgb(199, 189, 189);
+        flex-direction: column;
+
     }
 </style>

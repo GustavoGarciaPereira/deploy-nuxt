@@ -4,7 +4,7 @@
         <title>home</title>
         <div id="menu1">
 
-            <h1>gustavo olá 👋</h1>
+            <h1>gustavo diz olá 👋</h1>
             <NuxtLink to='/beleza'>
                 beleza
             </NuxtLink>
