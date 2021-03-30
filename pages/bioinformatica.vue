@@ -1,7 +1,9 @@
 <template>
     <div>
         <h1>bioinformatica</h1>
-        
+        <NuxtLink id="menu" to='/'>
+            <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
+        </NuxtLink>
 
         <div id="pergunta">
         <label for="text"> entre com a sequência</label>
@@ -11,9 +13,8 @@
         </a>
         </div>
         <div id="resposta">
-        <label for="text">resposta</label>
-        <input type="text">
-
+            <label for="text">resposta</label>
+            <input type="text">
         </div>
 
     </div>
@@ -30,7 +31,8 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
+
     h1{
         display: flex;
         justify-content: center;
