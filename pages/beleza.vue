@@ -11,8 +11,8 @@
             <NuxtLink to='/'>
                 <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
             </NuxtLink>
-            <input type="text" value="" placeholder="filtrar emojis">
-            <button v-on:click="asyncData">Buscar emojis</button>
+            
+            <button id="btn_buscar" href="#" v-on:click="asyncData">Buscar emojis</button>
         </div>
 
 
@@ -86,6 +86,13 @@ export default {
         border: 2px solid rgb(199, 189, 189);
         flex-direction: column;
 
+    }
+
+    #btn_buscar{
+        width: 200px;
+        height: 40px;
+        background-color:rgba(16, 45, 212, 0.658);
+        color: rgb(167, 138, 194);
     }
 
 </style>
