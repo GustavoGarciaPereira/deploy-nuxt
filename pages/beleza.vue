@@ -75,8 +75,6 @@ export default {
     }
     #menu-beleza{
     display: flex;
-
-
     }
     #menu-beleza{
         background: #eee;
@@ -91,8 +89,20 @@ export default {
     #btn_buscar{
         width: 200px;
         height: 40px;
-        background-color:rgba(16, 45, 212, 0.658);
-        color: rgb(167, 138, 194);
+        background-color:rgba(16, 45, 212, 0.514);
+        color: rgb(65, 21, 105);
     }
 
+
+@media (min-width: 760px) {
+  .lista{
+      padding-left: 80px;
+  }
+}
+
+@media (max-width: 858px) {
+  .lista{
+      padding-left: 114px;
+  }
+}
 </style>
