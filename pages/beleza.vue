@@ -16,8 +16,8 @@
         </div>
 
 
-        <div class="lista-class">
-            <div class="lista" v-for=" i in this.lista" :key="i[0]">
+        <div class="container">
+            <div class="iteins" v-for=" i in this.lista" :key="i[0]">
                 <card :src="i[1]"
                 :alternativo="i[0]"
                 :title="i[0]"/>
@@ -67,6 +67,23 @@ export default {
 }
 </script>
 <style scoped>
+    .container{
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .iteins{
+        width: 100px;
+        height: 100px;
+        margin: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 1rem 2rem 2rem 0rem;
+    }
+
+
+
     .lista-class{
         display: flex;
         flex-wrap: wrap;
@@ -92,16 +109,21 @@ export default {
         color: rgb(65, 21, 105);
     }
 
-@media (min-width: 760px) {
-  .lista{
-      padding-left: 80px;
-  }
-}
-
-@media (max-width: 858px) {
-  .lista{
-      padding-left: 114px;
-  }
+@media (min-width: 427px) {
+    .container{
+        padding: 13px 10px 10px 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .iteins{
+        width: 100px;
+        height: 100px;
+        margin: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 1rem 2rem 2rem 0rem;
+    }
 }
 
 </style>
