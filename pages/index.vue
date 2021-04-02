@@ -29,9 +29,9 @@
         height: 10em;
         position: relative 
     }
+    
     #menu1{
         margin: 0;
-
         position: absolute;
         top: 50%;
         left: 50%;
@@ -46,7 +46,6 @@
         background-color: darkolivegreen;
         color: aliceblue;
         border-radius: 20px;
-        
     }
     h1{
         padding-left: 60px;
