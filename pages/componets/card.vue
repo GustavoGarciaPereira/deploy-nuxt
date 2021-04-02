@@ -28,17 +28,14 @@
 <style scoped>
     figure{
         display: flex;
-
-
     }
     figure{
-        background: #eee;
+        background: rgb(238, 232, 232);
         padding: 2rem;
         width: 100px;
         align-items: center;
         text-align: center;
-        border: 2px solid rgb(199, 189, 189);
+        border: 2px solid rgb(236, 213, 213);
         flex-direction: column;
-
     }
 </style>
