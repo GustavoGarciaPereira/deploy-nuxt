@@ -67,15 +67,15 @@ export default {
 }
 </script>
 <style scoped>
-
     .lista-class{
         display: flex;
         flex-wrap: wrap;
+    }
 
-    }
     #menu-beleza{
-    display: flex;
+        display: flex;
     }
+
     #menu-beleza{
         background: #eee;
         padding: 2rem;
@@ -83,7 +83,6 @@ export default {
         text-align: center;
         border: 2px solid rgb(199, 189, 189);
         flex-direction: column;
-
     }
 
     #btn_buscar{
@@ -92,7 +91,6 @@ export default {
         background-color:rgba(16, 45, 212, 0.514);
         color: rgb(65, 21, 105);
     }
-
 
 @media (min-width: 760px) {
   .lista{
@@ -105,4 +103,5 @@ export default {
       padding-left: 114px;
   }
 }
+
 </style>
