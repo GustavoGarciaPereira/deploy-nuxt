@@ -82,13 +82,6 @@ export default {
         padding: 1rem 2rem 2rem 0rem;
     }
 
-
-
-    .lista-class{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     #menu-beleza{
         display: flex;
     }
