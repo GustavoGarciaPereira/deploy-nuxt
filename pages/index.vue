@@ -29,7 +29,7 @@
         height: 10em;
         position: relative 
     }
-    
+
     #menu1{
         margin: 0;
         position: absolute;
@@ -42,8 +42,8 @@
         margin: 40px;
         font-style:italic;
         text-decoration: none;
-        padding: 5px 4px 4px 5px;
-        background-color: darkolivegreen;
+        padding: 5px 10px 5px 10px;
+        background-color: rgb(108, 165, 10);
         color: aliceblue;
         border-radius: 20px;
     }
