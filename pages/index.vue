@@ -24,7 +24,7 @@
 
 </template>
 
-<style>
+<style scoped>
     #box1{
         height: 10em;
         position: relative 
