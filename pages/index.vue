@@ -12,6 +12,9 @@
             <NuxtLink to='/js-legal'>
                 um pouco de javascript
             </NuxtLink>
+            <NuxtLink to='/star-wars'>
+                Star Wars
+            </NuxtLink>
             
             <!-- 
                 <NuxtLink to='/bioinformatica'>
@@ -39,10 +42,10 @@
         transform: translate(-50%, -50%) 
     }
     a{
-        margin: 40px;
+        margin: 4px;
         font-style:italic;
         text-decoration: none;
-        padding: 5px 10px 5px 10px;
+        padding: 5px 5px 5px 10px;
         background-color: rgb(108, 165, 10);
         color: aliceblue;
         border-radius: 20px;
