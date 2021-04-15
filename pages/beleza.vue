@@ -16,9 +16,11 @@
 
         <div class="container">
             <div class="iteins" v-for=" i in this.lista" :key="i[0]">
+                
                 <card :src="i[1]"
                 :alternativo="i[0]"
                 :title="i[0]"/>
+                
             </div>
         </div>        
     </div>
@@ -64,6 +66,7 @@ export default {
         align-items: center;
         justify-content: center; 
         padding: 1rem 2rem 2rem 0rem;
+        
     }
 
     #menu-beleza{

@@ -7,8 +7,14 @@
 </NuxtLink>
 </div>
     <div id="main">
-
-
+        <div>
+            
+            <p>nome planeta {{ this.nome }}</p>
+                
+            
+            
+            
+        </div>
 
 
     </div>
@@ -20,14 +26,23 @@ export default {
     data() {
      
         return {
-            lista:[],
-            visivel:false 
+            //lista:[],
+            nome:"",
+            //visivel:false 
         }
     },
+    created(){
+        this.getWeatherData()
+    },
+    methods:{
+        async getWeatherData() {
+            const l = await this.$axios.$get('https://swapi.dev/api/planets/1/')
+            console.log(l)
+            this.nome = l.name
 
-    async mounted(){
-        const l = await this.$axios.$get('https://swapi.dev/api/planets/1/')
-        console.log(l)
+            //this.lista = l
+        },
+
     }
 }
 </script>

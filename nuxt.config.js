@@ -1,5 +1,5 @@
 export default {
-    modules: ['@nuxtjs/axios'],
+    modules: ['@nuxtjs/axios','bootstrap-vue/nuxt'],
     comments:true,
     head: {
       title:"nuxt",
