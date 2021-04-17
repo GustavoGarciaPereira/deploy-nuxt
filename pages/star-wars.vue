@@ -8,13 +8,20 @@
         </NuxtLink>
     </div>
 
-    <h1 class="text-center">planeta do star wars</h1>
-    <p>nome planeta : {{ this.dados_planeta.name }}</p>
-    <p>diameter planeta : {{ this.dados_planeta.diameter }}</p>
-    <p>gravity planeta : {{ this.dados_planeta.gravity }}</p>
-    <p>population planeta : {{ this.dados_planeta.population }}</p>
-    <p>terrain planeta : {{ this.dados_planeta.terrain }}</p>
-    <p>climate planeta : {{ this.dados_planeta.climate }}</p>
+
+    <div v-for="(item, index) in dados_planeta" :key="index">
+        
+        <h1 class="text-center">planeta do star wars {{ item.name }}</h1>
+        <p>nome planeta : {{ item.name }}</p>
+        <p>diameter planeta : {{ item.diameter }}</p>
+        <p>gravity planeta : {{ item.gravity }}</p>
+        <p>population planeta : {{ item.population }}</p>
+        <p>terrain planeta : {{ item.terrain }}</p>
+        <p>climate planeta : {{ item.climate }}</p>
+
+
+    </div>
+
 
 </div>
 </template>
@@ -34,9 +41,9 @@ export default {
     },
     methods:{
         async getWeatherData() {
-            const l = await this.$axios.$get('https://swapi.dev/api/planets/1/')
-            console.log(l)
-            this.dados_planeta = l
+            const l = await this.$axios.$get('https://swapi.dev/api/planets/')
+            console.log(l.results)
+            this.dados_planeta = l.results
             //this.lista = l
         },
 
