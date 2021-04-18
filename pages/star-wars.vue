@@ -2,26 +2,24 @@
 <div class="container">
 
 
-    <div class="text-center">
+    <div id="menu" class="text-center">
         <NuxtLink to='/'>
             <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
         </NuxtLink>
     </div>
 
-
+<h1 class="text-center">planetas de star wars</h1>
     <div v-for="(item, index) in dados_planeta" :key="index">
-        <div class="card">
-            <h1 class="text-center">planeta do star wars {{ item.name }}</h1>
-            <p>nome planeta : {{ item.name }}</p>
-            <p>diameter planeta : {{ item.diameter }}</p>
-            <p>gravity planeta : {{ item.gravity }}</p>
-            <p>population planeta : {{ item.population }}</p>
-            <p>terrain planeta : {{ item.terrain }}</p>
-            <p>climate planeta : {{ item.climate }}</p>
+        <div class="planetas">
+            <div class="card">
+                <h2 class="text-center"> {{ item.name }}</h2>
+                <p class="text-center">diameter planeta : {{ item.diameter }}</p>
+                <p class="text-center">gravity planeta : {{ item.gravity }}</p>
+                <p class="text-center">population planeta : {{ item.population }}</p>
+                <p class="text-center">terrain planeta : {{ item.terrain }}</p>
+                <p class="text-center">climate planeta : {{ item.climate }}</p>
+            </div>
         </div>
-
-
-
     </div>
 
 
@@ -52,8 +50,22 @@ export default {
     }
 }
 </script>
-<style>
-    .container{
-        padding-top: 30px;
-    }
+<style >
+body{
+    background-color: rgba(146, 158, 160, 0.479);
+}
+#menu{
+    padding-bottom: 12px;
+}
+.card{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgba(201, 240, 246, 0.479);
+}
+.planetas{
+    padding-bottom: 20px;
+}
+.container{
+    padding-top: 30px;
+}
 </style>
