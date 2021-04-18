@@ -50,7 +50,7 @@ export default {
     }
 }
 </script>
-<style >
+<style scoped>
 body{
     background-color: rgba(146, 158, 160, 0.479);
 }
