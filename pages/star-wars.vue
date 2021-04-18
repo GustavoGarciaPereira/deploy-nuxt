@@ -10,14 +10,16 @@
 
 
     <div v-for="(item, index) in dados_planeta" :key="index">
-        
-        <h1 class="text-center">planeta do star wars {{ item.name }}</h1>
-        <p>nome planeta : {{ item.name }}</p>
-        <p>diameter planeta : {{ item.diameter }}</p>
-        <p>gravity planeta : {{ item.gravity }}</p>
-        <p>population planeta : {{ item.population }}</p>
-        <p>terrain planeta : {{ item.terrain }}</p>
-        <p>climate planeta : {{ item.climate }}</p>
+        <div class="card">
+            <h1 class="text-center">planeta do star wars {{ item.name }}</h1>
+            <p>nome planeta : {{ item.name }}</p>
+            <p>diameter planeta : {{ item.diameter }}</p>
+            <p>gravity planeta : {{ item.gravity }}</p>
+            <p>population planeta : {{ item.population }}</p>
+            <p>terrain planeta : {{ item.terrain }}</p>
+            <p>climate planeta : {{ item.climate }}</p>
+        </div>
+
 
 
     </div>
