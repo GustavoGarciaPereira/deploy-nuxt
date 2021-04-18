@@ -51,21 +51,24 @@ export default {
 }
 </script>
 <style scoped>
-body{
-    background-color: rgba(146, 158, 160, 0.479);
-}
-#menu{
-    padding-bottom: 12px;
-}
-.card{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: rgba(201, 240, 246, 0.479);
-}
-.planetas{
-    padding-bottom: 20px;
-}
-.container{
-    padding-top: 30px;
-}
+    h1{
+        padding-top: 42px;
+        padding-bottom: 12px;  
+    }
+    #menu{
+        padding-top: 42px;
+        padding-bottom: 32px;
+    }
+    .card{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: rgba(201, 240, 246, 0.479);
+    }
+    .planetas{
+        padding-bottom: 40px;
+    }
+    .container{
+        padding-top: 30px;
+        background-color: rgba(146, 158, 160, 0.479);
+    }
 </style>

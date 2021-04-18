@@ -1,6 +1,6 @@
 <template>
 
-        <div class="card" style="width='150px'height='150px'">
+        <div class="card">
             <img :src="src" :alt="alternativo">
             <span class="text-center">{{ title }}</span>
         </div>
@@ -27,4 +27,8 @@
 
 <style scoped>
 
+.card{
+    width: 412px;
+    height: 112px;
+}
 </style>

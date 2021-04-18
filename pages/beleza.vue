@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="div-pri">
         <div id="menu-beleza">
             <div>
             <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" 
@@ -53,6 +53,9 @@ export default {
 }
 </script>
 <style scoped>
+#div-pri{
+    background-color: rgba(192, 245, 245, 0.589);
+}
     .container{
         padding: 16px;
         display: flex;
