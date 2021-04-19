@@ -56,8 +56,8 @@ export default {
         padding-bottom: 12px;  
     }
     #menu{
-        padding-top: 42px;
         padding-bottom: 32px;
+        padding-top: 52px;
     }
     .card{
         padding-top: 12px;

@@ -42,13 +42,14 @@
         transform: translate(-50%, -50%) 
     }
     a{
-        margin: 4px;
+        margin: 10px;
         font-style:italic;
         text-decoration: none;
-        padding: 5px 5px 5px 10px;
-        background-color: rgb(108, 165, 10);
-        color: aliceblue;
-        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(140, 184, 63);
+        /*color: aliceblue;*/
+        color: rgb(51, 99, 5);
+        border-radius: 10px;
     }
     h1{
         padding-left: 60px;

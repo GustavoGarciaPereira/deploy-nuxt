@@ -83,7 +83,7 @@
     }
     #main{
         margin: 50px;
-        padding-top: 10px;
+        padding-top: 40px;
     }
     #box{
         height: 10em;
@@ -95,6 +95,8 @@
         position: absolute;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%) 
+        transform: translate(-50%, -50%);
+        padding-bottom: 32px;
+        padding-top: 32px;
     }
 </style>
