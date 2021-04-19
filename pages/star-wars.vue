@@ -63,6 +63,7 @@ export default {
         padding-top: 12px;
         padding-bottom: 12px;
         background-color: rgba(201, 240, 246, 0.479);
+        border:solid 2px rgba(201, 240, 246, 0.479) ;
     }
     .planetas{
         padding-bottom: 40px;
