@@ -9,8 +9,8 @@
 </div>
 
     <div id="main">
-        <a href="#primera_materia" class="btn">gustavo</a>
-        <a href="#segunda_materia" class="btn">gustavo</a>
+        <a href="#primera_materia" class="btn">básico js</a>
+        <a href="#segunda_materia" class="btn">react in cdn</a>
 
         <h1>Primeiro é preciso caminhar para depois correr!</h1>
         <div>
@@ -82,7 +82,53 @@
         <h2 id="segunda_materia">React in cdn</h2>
 
 <p>vim aqui escrever um texto que eu acho muito legal</p>
-<p>como podemos usar o reac com cdn</p>
+<p>como podemos usar o react com cdn</p>
+<p>primeiramente devemos importar o cdn do react</p>
+<p>onde tem todos os códgio e biblioteca que presisamos</p>
+
+<pre style="color:#55cc66;background:#001800;">  <span style="color:#808030; ">&lt;</span>script crossorigin src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#cc5555; ">https://unpkg.com/react@17/umd/react.development.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span>
+  <span style="color:#808030; ">&lt;</span>script crossorigin src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#cc5555; ">https://unpkg.com/react-dom@17/umd/react-dom.development.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span>
+  <span style="color:#808030; ">&lt;</span>script src<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#cc5555; ">https://unpkg.com/babel-standalone@6/babel.min.js</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>script<span style="color:#808030; ">&gt;</span>
+</pre>
+
+
+
+
+<pre style="color:#55cc66;background:#001800;">  <span style="color:#508050; font-weight:bold; ">const</span> frontEndFrameworks <span style="color:#808030; ">=</span> <span style="color:#808030; ">[</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">React</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">Angular</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">Ember</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">Knockout</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">Backbone</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>
+  <span style="color:#800000; ">'</span><span style="color:#cc5555; ">Vue</span><span style="color:#800000; ">'</span>
+<span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+</pre>
+
+
+<pre style="color:#55cc66;background:#001800;">  <span style="color:#508050; font-weight:bold; ">function</span> Fun<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+    <span style="color:#508050; font-weight:bold; ">const</span> lista <span style="color:#808030; ">=</span> frontEndFrameworks<span style="color:#808030; ">.</span><span style="color:#508050; font-weight:bold; ">map</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>iten<span style="color:#808030; ">,</span>index<span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+      <span style="color:#508050; font-weight:bold; ">return</span> <span style="color:#808030; ">&lt;</span>li key<span style="color:#808030; ">=</span><span style="color:#800080; ">{</span>index<span style="color:#800080; ">}</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>iten<span style="color:#800080; ">}</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>li<span style="color:#808030; ">&gt;</span>
+    <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span>
+    <span style="color:#508050; font-weight:bold; ">return</span> <span style="color:#808030; ">(</span>
+      <span style="color:#808030; ">&lt;</span>div<span style="color:#808030; ">&gt;</span>
+        <span style="color:#808030; ">&lt;</span>h1<span style="color:#808030; ">&gt;</span>FrontEnd Frameworks<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>h1<span style="color:#808030; ">&gt;</span>
+        <span style="color:#808030; ">&lt;</span>ul<span style="color:#808030; ">&gt;</span>
+          <span style="color:#808030; ">&lt;</span>h5<span style="color:#808030; ">&gt;</span>FrontEnd Frameworks<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>h5<span style="color:#808030; ">&gt;</span>
+          <span style="color:#800080; ">{</span>lista<span style="color:#800080; ">}</span>
+        <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>ul<span style="color:#808030; ">&gt;</span>
+      <span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span>
+    <span style="color:#808030; ">)</span>
+  <span style="color:#800080; ">}</span>
+</pre>
+
+
+
+<pre style="color:#55cc66;background:#001800;">  ReactDOM<span style="color:#808030; ">.</span>render<span style="color:#808030; ">(</span>Fun<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">,</span> document<span style="color:#808030; ">.</span>getElementById<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#cc5555; ">root</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
+</pre>
+
+
+<pre style="color:#55cc66;background:#001800;">  <span style="color:#808030; ">&lt;</span>div id<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#cc5555; ">root</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span><span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>div<span style="color:#808030; ">&gt;</span>
+</pre>
 
 
     </div>
