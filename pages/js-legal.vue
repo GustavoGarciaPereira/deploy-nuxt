@@ -5,9 +5,12 @@
 <NuxtLink id="menu" to='/'>
     <img src="https://cdn.onlinewebfonts.com/svg/img_394318.png" width="50px" height="50px" alt="">
 </NuxtLink>
-</div>
-    <div id="main">
 
+</div>
+
+    <div id="main">
+        <a href="#primera_materia" class="btn">gustavo</a>
+        <a href="#segunda_materia" class="btn">gustavo</a>
 
         <h1>Primeiro é preciso caminhar para depois correr!</h1>
         <div>
@@ -15,7 +18,7 @@
             <p>mas com a experiência de ter caído!</p>
         </div>
 
-        <h2>O que aprendi hoje com javascrit</h2>
+        <h2 id="primeira_materia">O que aprendi hoje com javascrit</h2>
         <h3>adicionar no array.</h3>
         <p>modificar arrays</p>
         <p>para adicionar um elemento no ultimo lugar do array</p>
@@ -72,7 +75,17 @@
 <span style="color:#808030; ">&gt;</span> 
 </pre>
 
-</div>
+    </div>
+
+    <div id="main">
+
+        <h2 id="segunda_materia">React in cdn</h2>
+
+<p>vim aqui escrever um texto que eu acho muito legal</p>
+<p>como podemos usar o reac com cdn</p>
+
+
+    </div>
 </div>
 </template>
 
@@ -98,5 +111,17 @@
         transform: translate(-50%, -50%);
         padding-bottom: 32px;
         padding-top: 32px;
+    }
+    a.btn{
+            
+        margin: 10px;
+        font-style:italic;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(140, 184, 63);
+        /*color: aliceblue;*/
+        color: rgb(51, 99, 5);
+        border-radius: 10px;
+    
     }
 </style>
