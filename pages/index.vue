@@ -50,8 +50,12 @@
         /*color: aliceblue;*/
         color: rgb(51, 99, 5);
         border-radius: 10px;
+        box-shadow: 10px 10px #81d890;
+        /* text-shadow: 3px 2px #558ABB; */
     }
     h1{
         padding-left: 60px;
+        text-shadow: 2px 2px #010102;
+
     }
 </style>
