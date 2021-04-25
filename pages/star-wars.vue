@@ -42,7 +42,7 @@ export default {
     methods:{
         async getWeatherData() {
             const l = await this.$axios.$get('https://swapi.dev/api/planets/')
-            console.log(l.results)
+            //console.log(l.results)
             this.dados_planeta = l.results
             //this.lista = l
         },

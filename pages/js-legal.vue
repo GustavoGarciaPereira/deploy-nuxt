@@ -135,7 +135,7 @@
 </div>
 </template>
 
-<style>
+<style scoped>
     .code{
         padding-left: 50px;
         padding-right: 50px;
