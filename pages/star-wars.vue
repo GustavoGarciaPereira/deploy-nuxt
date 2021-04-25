@@ -8,7 +8,7 @@
         </NuxtLink>
     </div>
 
-<h1 class="text-center">planetas de star wars</h1>
+<h1 class="text-center">Planetas de star wars</h1>
     <div v-for="(item, index) in dados_planeta" :key="index">
         <div class="planetas">
             <div class="card">
@@ -51,6 +51,7 @@ export default {
 }
 </script>
 <style scoped>
+
     h1{
         padding-top: 42px;
         padding-bottom: 12px;  
@@ -62,14 +63,17 @@ export default {
     .card{
         padding-top: 12px;
         padding-bottom: 12px;
-        background-color: rgba(201, 240, 246, 0.479);
-        border:solid 2px rgba(201, 240, 246, 0.479) ;
+        background-color:#000000;
+        color: #e5e338;
+        border:solid 2px #ec576b;
+
     }
     .planetas{
         padding-bottom: 40px;
     }
     .container{
         padding-top: 30px;
-        background-color: rgba(146, 158, 160, 0.479);
+        background-color: #4ec5c1;
+        color: #e5e338;
     }
 </style>
