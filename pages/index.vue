@@ -4,8 +4,16 @@
         <title>home</title>
         <div id="menu1">
 
-            <h1>gustavo diz olá 👋</h1>
-            <NuxtLink to='/beleza'>
+            <h1>gustavo diz olá 
+                <span>
+                    <img class="rotating" src="https://twemoji.maxcdn.com/2/svg/1f44b.svg" 
+                        width="40px" height="40px" alt="">
+                </span>
+            </h1>
+
+
+
+            <NuxtLink class="rotating1" to='/beleza'>
                 beleza
             </NuxtLink>
             
@@ -58,4 +66,15 @@
         text-shadow: 2px 2px #010102;
 
     }
+
+    .rotating {
+        transition: transform 0.5s ease-in-out;
+    }
+    .rotating:hover {
+        transform: rotateZ(-100deg);
+    }
+    h1{
+        padding-bottom: 10px;
+    }
+
 </style>
