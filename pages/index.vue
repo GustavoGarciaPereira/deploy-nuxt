@@ -39,14 +39,10 @@
     text-align: center;
 }
     .menu-m{
-        /* padding-top: 2rem;
-        padding-bottom: 5rem;
-        */
     color: azure;
         padding-top: 2rem;
         padding-bottom: 2rem;
         text-align: center;
-
     }
 
     a{
