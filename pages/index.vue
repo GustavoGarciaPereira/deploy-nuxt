@@ -1,17 +1,13 @@
 <template>
     
-    <div id="box1">
-        <title>home</title>
-        <div id="menu1">
-
+    <div class="div-main">
+        <div class="menu-m">
             <h1>gustavo diz olá 
                 <span>
                     <img class="rotating" src="https://twemoji.maxcdn.com/2/svg/1f44b.svg" 
                         width="40px" height="40px" alt="">
                 </span>
             </h1>
-
-
 
             <NuxtLink class="rotating1" to='/beleza'>
                 beleza
@@ -23,32 +19,36 @@
             <NuxtLink to='/star-wars'>
                 Star Wars
             </NuxtLink>
-            
-            <!-- 
-                <NuxtLink to='/bioinformatica'>
-                    Bioinformarica
-                </NuxtLink>
-            -->
         </div>
+            
+        
+        <div class="img-div">
+            <img src="https://i.pinimg.com/originals/3d/f3/eb/3df3eb1714d898fdf69c621ea949b3a3.gif" alt="">
+        </div>
+        
     </div>
 
 
 </template>
 
 <style scoped>
-    #box1{
-        height: 10em;
-        position: relative 
+.div-main{
+    background-color:rgb(21,37,67);
+}
+.img-div{
+    text-align: center;
+}
+    .menu-m{
+        /* padding-top: 2rem;
+        padding-bottom: 5rem;
+        */
+    color: azure;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
     }
 
-    #menu1{
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) 
-    }
     a{
         margin: 10px;
         font-style:italic;
@@ -61,11 +61,6 @@
         box-shadow: 10px 10px #81d890;
         /* text-shadow: 3px 2px #558ABB; */
     }
-    h1{
-        padding-left: 60px;
-        text-shadow: 2px 2px #010102;
-
-    }
 
     .rotating {
         transition: transform 0.5s ease-in-out;
@@ -75,6 +70,7 @@
     }
     h1{
         padding-bottom: 10px;
+        text-shadow: 2px 2px #010102;
     }
 
 </style>
