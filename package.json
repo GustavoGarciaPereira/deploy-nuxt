@@ -5,7 +5,8 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",
-    "up":"npm update"
+    "up":"npm update",
+    "upy":"yarn upgrade"
   },
   "dependencies": {
     "@nuxtjs/axios": "",
