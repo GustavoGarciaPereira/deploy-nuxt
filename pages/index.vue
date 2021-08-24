@@ -34,6 +34,7 @@
 <style scoped>
 .div-main{
     background-color:rgb(21,37,67);
+    height: 1000px;
 }
 .img-div{
     text-align: center;
