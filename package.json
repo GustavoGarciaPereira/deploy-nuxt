@@ -12,7 +12,7 @@
     "bootstrap": "",
     "bootstrap-vue": "",
     "is-svg": "",
-    "nuxt": "",
-    "vue": ""
+    "nuxt": "^2.15.4",
+    "vue": "^2.6.12"
   }
 }
