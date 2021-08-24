@@ -4,7 +4,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "up":"npm update"
   },
   "dependencies": {
     "@nuxtjs/axios": "",
@@ -12,7 +13,7 @@
     "bootstrap": "",
     "bootstrap-vue": "",
     "is-svg": "",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.8",
     "vue": "^2.6.12"
   }
 }
